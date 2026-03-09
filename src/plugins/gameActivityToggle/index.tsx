@@ -22,7 +22,7 @@ import { isPluginEnabled } from "@api/PluginManager";
 import { definePluginSettings } from "@api/Settings";
 import { UserAreaButton, UserAreaRenderProps } from "@api/UserArea";
 import { getUserSettingLazy } from "@api/UserSettings";
-import equicordToolbox from "@equicordplugins/equicordToolbox";
+import dussicordToolbox from "@dussicordplugins/dussicordToolbox";
 import { Devs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 import { Menu } from "@webpack/common";
@@ -40,10 +40,10 @@ const settings = definePluginSettings({
         description: "Where to show the game activity toggle button",
         options: [
             { label: "Next to Mute/Deafen", value: "PANEL", default: true },
-            { label: "Equicord Toolbox", value: "TOOLBOX" }
+            { label: "Dussicord Toolbox", value: "TOOLBOX" }
         ],
         get hidden() {
-            return !isPluginEnabled(equicordToolbox.name);
+            return !isPluginEnabled(dussicordToolbox.name);
         }
     }
 });
@@ -82,7 +82,7 @@ function GameActivityToggleButton({ iconForeground, hideTooltips, nameplate }: U
     const { location } = settings.use(["location"]);
     const showCurrentGame = ShowCurrentGame.useSetting();
 
-    if (location !== "PANEL" && isPluginEnabled(equicordToolbox.name)) return null;
+    if (location !== "PANEL" && isPluginEnabled(dussicordToolbox.name)) return null;
 
     return (
         <UserAreaButton

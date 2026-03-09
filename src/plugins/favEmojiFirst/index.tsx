@@ -12,7 +12,7 @@ import { definePluginSettings } from "@api/Settings";
 import { BaseText } from "@components/BaseText";
 import { Button } from "@components/Button";
 import { Paragraph } from "@components/Paragraph";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, DussicordDevs } from "@utils/constants";
 import { classNameFactory } from "@utils/css";
 import { Logger } from "@utils/Logger";
 import { openModal } from "@utils/modal";
@@ -1100,7 +1100,7 @@ const messageSendListener = (_channelId: string, messageObj: { content: string; 
 
 export default definePlugin({
     name: "FavoriteEmojiFirst",
-    authors: [Devs.Aria, Devs.Ven, EquicordDevs.justjxke],
+    authors: [Devs.Aria, Devs.Ven, DussicordDevs.justjxke],
     tags: ["EmojiAlias"],
     description: "Puts your favorite emoji first in the emoji autocomplete and also has emoji alias.",
     settings,

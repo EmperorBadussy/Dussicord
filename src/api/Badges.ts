@@ -17,7 +17,7 @@
 */
 
 import ErrorBoundary from "@components/ErrorBoundary";
-import globalBadges from "@equicordplugins/globalBadges";
+import globalBadges from "@dussicordplugins/globalBadges";
 import BadgeAPIPlugin from "@plugins/_api/badges";
 import { ComponentType, HTMLProps } from "react";
 
@@ -102,7 +102,7 @@ export function _getBadges(args: BadgeUserArgs) {
     }
 
     const donorBadges = BadgeAPIPlugin.getDonorBadges(args.userId);
-    const equicordDonorBadges = BadgeAPIPlugin.getEquicordDonorBadges(args.userId);
+    const dussicordDonorBadges = BadgeAPIPlugin.getDussicordDonorBadges(args.userId);
     const GlobalBadges = isPluginEnabled(globalBadges.name) ? globalBadges.getGlobalBadges(args.userId) : false;
 
     // do globalbadges first so it shows before the contrib badges but after donor badges
@@ -124,9 +124,9 @@ export function _getBadges(args: BadgeUserArgs) {
         );
     }
 
-    if (equicordDonorBadges) {
+    if (dussicordDonorBadges) {
         badges.unshift(
-            ...equicordDonorBadges.map(badge => ({
+            ...dussicordDonorBadges.map(badge => ({
                 ...args,
                 ...badge,
             }))

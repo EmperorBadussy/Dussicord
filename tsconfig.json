@@ -54,8 +54,8 @@
             "@webpack/wreq.d": [
                 "./webpack/wreq.d"
             ],
-            "@equicordplugins/*": [
-                "./equicordplugins/*"
+            "@dussicordplugins/*": [
+                "./dussicordplugins/*"
             ]
         },
         "plugins": [

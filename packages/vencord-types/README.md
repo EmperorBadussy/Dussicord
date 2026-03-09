@@ -1,11 +1,11 @@
-# Equicord Types
+# Dussicord Types
 
-Typings for Equicord's api, published to npm
+Typings for Dussicord's api, published to npm
 
 ```sh
-npm i @equicord/types
+npm i @dussicord/types
 
-yarn add @equicord/types
+yarn add @dussicord/types
 
-pnpm add @equicord/types
+pnpm add @dussicord/types
 ```

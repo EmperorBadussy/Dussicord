@@ -5,7 +5,7 @@
  */
 
 import { definePluginSettings } from "@api/Settings";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, DussicordDevs } from "@utils/constants";
 import definePlugin, { OptionType } from "@utils/types";
 
 let closeSuppressCount = 0;
@@ -20,7 +20,7 @@ const settings = definePluginSettings({
 export default definePlugin({
     name: "BetterGifPicker",
     description: "Makes the gif picker open the favourite category by default",
-    authors: [Devs.Samwich, EquicordDevs.justjxke],
+    authors: [Devs.Samwich, DussicordDevs.justjxke],
     isModified: true,
     settings,
     patches: [

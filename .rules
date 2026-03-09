@@ -1,4 +1,4 @@
-# Equicord Development Guidelines
+# Dussicord Development Guidelines
 
 ## Critical Rules
 
@@ -133,7 +133,7 @@ replace: "$self.renderTypingUsers({ children: $& })"
 
 ```ts
 import { isPluginEnabled } from "@api/PluginManager";
-import otherPlugin from "@equicordplugins/otherPlugin";
+import otherPlugin from "@dussicordplugins/otherPlugin";
 if (!isPluginEnabled(otherPlugin.name)) return null;
 otherPlugin.someFunction();
 ```

@@ -6,7 +6,7 @@
 
 import { definePluginSettings, migratePluginToSettings, migrateSettingsFromPlugin } from "@api/Settings";
 import ErrorBoundary from "@components/ErrorBoundary";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, DussicordDevs } from "@utils/constants";
 import { useTimer } from "@utils/react";
 import { formatDurationMs } from "@utils/text";
 import definePlugin, { OptionType } from "@utils/types";
@@ -111,7 +111,7 @@ migrateSettingsFromPlugin("CallTimer", "AllCallTimers", "showWithoutHover", "sho
 export default definePlugin({
     name: "CallTimer",
     description: "Add call timers for all users in voice channels and in the connection status.",
-    authors: [Devs.Ven, EquicordDevs.MaxHerbold, Devs.D3SOX],
+    authors: [Devs.Ven, DussicordDevs.MaxHerbold, Devs.D3SOX],
     managedStyle: alignedChatInputFix,
     settings,
 

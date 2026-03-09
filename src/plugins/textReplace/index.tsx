@@ -21,7 +21,7 @@ import { Divider } from "@components/Divider";
 import { Flex } from "@components/Flex";
 import { HeadingTertiary } from "@components/Heading";
 import { DeleteIcon } from "@components/Icons";
-import { Devs, EquicordDevs } from "@utils/constants";
+import { Devs, DussicordDevs } from "@utils/constants";
 import { Logger } from "@utils/Logger";
 import definePlugin, { OptionType } from "@utils/types";
 import { Message } from "@vencord/discord-types";
@@ -250,13 +250,13 @@ function modifyIncomingMessage(message: Message) {
 
 const TEXT_REPLACE_RULES_EXEMPT_CHANNEL_IDS = [
     "1102784112584040479", // Vencord's Text Replace Rules Channel
-    "1419347113745059961", // Equicord's Requests Channel
+    "1419347113745059961", // Dussicord's Requests Channel
 ];
 
 export default definePlugin({
     name: "TextReplace",
     description: "Replace text in your or others' messages. You can find pre-made rules in the #textreplace-rules channel in Vencord's Server.",
-    authors: [Devs.AutumnVN, Devs.TheKodeToad, EquicordDevs.Etorix],
+    authors: [Devs.AutumnVN, Devs.TheKodeToad, DussicordDevs.Etorix],
     isModified: true,
 
     settings,

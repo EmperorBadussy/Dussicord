@@ -68,7 +68,7 @@ export function VencordDonorModal() {
     ));
 }
 
-export function EquicordDonorModal() {
+export function DussicordDonorModal() {
     const modalKey = openModal(props => (
         <ErrorBoundary noop onError={() => {
             closeModal(modalKey);
@@ -85,7 +85,7 @@ export function EquicordDonorModal() {
                     >
                         <Flex justifyContent="center" alignItems="center" gap="0.5em">
                             <Heart />
-                            Equicord Donor
+                            Dussicord Donor
                         </Flex>
                     </HeadingPrimary>
                 </ModalHeader>
@@ -106,16 +106,16 @@ export function EquicordDonorModal() {
                     </Flex>
                     <div style={{ padding: "1em" }}>
                         <Paragraph>
-                            This Badge is a special perk for Equicord (Not Vencord) Donors
+                            This Badge is a special perk for Dussicord (Not Vencord) Donors
                         </Paragraph>
                         <Paragraph className={Margins.top20}>
-                            Please consider supporting the development of Equicord by becoming a donor. It would mean a lot! :3
+                            Please consider supporting the development of Dussicord by becoming a donor. It would mean a lot! :3
                         </Paragraph>
                     </div>
                 </ModalContent>
                 <ModalFooter>
                     <Flex justifyContent="center" style={{ width: "100%" }}>
-                        <DonateButton equicord={true} />
+                        <DonateButton dussicord={true} />
                     </Flex>
                 </ModalFooter>
             </ModalRoot>
@@ -123,7 +123,7 @@ export function EquicordDonorModal() {
     ));
 }
 
-export function EquicordTranslatorModal() {
+export function DussicordTranslatorModal() {
     const modalKey = openModal(props => (
         <ErrorBoundary noop onError={() => {
             closeModal(modalKey);
@@ -138,7 +138,7 @@ export function EquicordTranslatorModal() {
                         }}
                     >
                         <Flex justifyContent="center" alignItems="center" gap="0.5em">
-                            Equicord Translator
+                            Dussicord Translator
                         </Flex>
                     </HeadingPrimary>
                 </ModalHeader>
@@ -153,7 +153,7 @@ export function EquicordTranslatorModal() {
                     </Flex>
                     <div className="vc-translate-modal-paragraph">
                         <Paragraph>
-                            Awarded to contributors who expand Equicord’s language support by translating content for the community.
+                            Awarded to contributors who expand Dussicord’s language support by translating content for the community.
                         </Paragraph>
                     </div>
                 </ModalContent>
