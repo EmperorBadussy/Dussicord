@@ -1,4 +1,4 @@
-/* Dussicord Phantom Theme — OLED Tron Purple */
+/* Dussicord Phantom Theme — OLED Tron Purple — Full Acrylic Glass */
 
 @import url("https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Orbitron:wght@400;500;600;700;800;900&family=Rajdhani:wght@300;400;500;600;700&display=swap");
 
@@ -9,19 +9,19 @@
 :root,
 .theme-dark,
 .theme-light {
-    /* Backgrounds — OLED Black */
-    --background-primary: #000000;
-    --background-secondary: #09090F;
-    --background-tertiary: #0F0F1A;
-    --background-secondary-alt: #09090F;
-    --background-floating: #09090F;
+    /* Backgrounds — Transparent acrylic over OLED black */
+    --background-primary: rgba(0, 0, 0, 0.5);
+    --background-secondary: rgba(9, 9, 15, 0.4);
+    --background-tertiary: rgba(15, 15, 26, 0.35);
+    --background-secondary-alt: rgba(9, 9, 15, 0.4);
+    --background-floating: rgba(9, 9, 15, 0.6);
     --background-accent: #7B2FBE;
-    --background-modifier-hover: rgba(123, 47, 190, 0.1);
-    --background-modifier-active: rgba(123, 47, 190, 0.18);
-    --background-modifier-selected: rgba(123, 47, 190, 0.15);
+    --background-modifier-hover: rgba(123, 47, 190, 0.12);
+    --background-modifier-active: rgba(123, 47, 190, 0.2);
+    --background-modifier-selected: rgba(123, 47, 190, 0.18);
     --background-modifier-accent: rgba(123, 47, 190, 0.08);
-    --bg-overlay-chat: #000000;
-    --home-background: #000000;
+    --bg-overlay-chat: rgba(0, 0, 0, 0.35);
+    --home-background: rgba(0, 0, 0, 0.3);
 
     /* Text Colors — Purple-White, no pure white */
     --text-normal: #EED4FF;
@@ -52,26 +52,26 @@
     --font-headline: "Orbitron", sans-serif;
 
     /* Input */
-    --input-background: #12121F;
+    --input-background: rgba(18, 18, 31, 0.6);
 
     /* Channels */
     --channels-default: #D4A0FF;
     --channel-icon: #6B42A0;
     --channel-text-area-placeholder: #6B42A0;
 
-    /* Deprecated / legacy vars Discord still reads */
-    --deprecated-panel-background: #09090F;
+    /* Deprecated / legacy vars */
+    --deprecated-panel-background: rgba(9, 9, 15, 0.5);
     --deprecated-card-bg: rgba(123, 47, 190, 0.08);
-    --deprecated-store-bg: #000000;
-    --deprecated-quickswitcher-input-background: #12121F;
+    --deprecated-store-bg: rgba(0, 0, 0, 0.4);
+    --deprecated-quickswitcher-input-background: rgba(18, 18, 31, 0.6);
     --deprecated-quickswitcher-input-placeholder: #6B42A0;
-    --deprecated-text-input-bg: #12121F;
+    --deprecated-text-input-bg: rgba(18, 18, 31, 0.6);
     --deprecated-text-input-border: #362050;
     --deprecated-text-input-border-hover: #6B42A0;
     --deprecated-text-input-prefix: #D4A0FF;
 
     /* Activity card */
-    --activity-card-background: #09090F;
+    --activity-card-background: rgba(9, 9, 15, 0.5);
 
     /* Mention */
     --mention-foreground: #B76EFF;
@@ -84,45 +84,45 @@
     --info-help-foreground: #B76EFF;
 
     /* Scrollbar */
-    --scrollbar-thin-thumb: #6B42A0;
+    --scrollbar-thin-thumb: rgba(107, 66, 160, 0.5);
     --scrollbar-thin-track: transparent;
-    --scrollbar-auto-thumb: #6B42A0;
-    --scrollbar-auto-track: #000000;
-    --scrollbar-auto-scrollbar-color-thumb: #6B42A0;
-    --scrollbar-auto-scrollbar-color-track: #000000;
+    --scrollbar-auto-thumb: rgba(107, 66, 160, 0.5);
+    --scrollbar-auto-track: transparent;
+    --scrollbar-auto-scrollbar-color-thumb: rgba(107, 66, 160, 0.5);
+    --scrollbar-auto-scrollbar-color-track: transparent;
 
-    /* Elevation / shadow */
-    --elevation-stroke: rgba(54, 32, 80, 0.6);
-    --elevation-low: 0 1px 0 rgba(54, 32, 80, 0.3), 0 1.5px 0 rgba(0, 0, 0, 0.3);
-    --elevation-medium: 0 4px 4px rgba(0, 0, 0, 0.16);
-    --elevation-high: 0 8px 16px rgba(0, 0, 0, 0.24);
+    /* Elevation / shadow — purple glow */
+    --elevation-stroke: rgba(54, 32, 80, 0.4);
+    --elevation-low: 0 1px 0 rgba(54, 32, 80, 0.2), 0 1.5px 0 rgba(0, 0, 0, 0.2);
+    --elevation-medium: 0 4px 12px rgba(0, 0, 0, 0.2), 0 0 20px rgba(123, 47, 190, 0.05);
+    --elevation-high: 0 8px 24px rgba(0, 0, 0, 0.3), 0 0 30px rgba(123, 47, 190, 0.08);
 
     /* Modal / overlay */
-    --modal-background: #09090F;
-    --modal-footer-background: #0F0F1A;
+    --modal-background: rgba(9, 9, 15, 0.7);
+    --modal-footer-background: rgba(15, 15, 26, 0.5);
 
     /* Profile */
-    --profile-body-background-color: #09090F;
+    --profile-body-background-color: rgba(9, 9, 15, 0.6);
 
     /* Misc */
-    --search-popout-option-fade: linear-gradient(90deg, transparent, #09090F);
-    --background-mentioned: rgba(123, 47, 190, 0.08);
-    --background-mentioned-hover: rgba(123, 47, 190, 0.12);
+    --search-popout-option-fade: linear-gradient(90deg, transparent, rgba(9, 9, 15, 0.6));
+    --background-mentioned: rgba(123, 47, 190, 0.1);
+    --background-mentioned-hover: rgba(123, 47, 190, 0.15);
     --background-message-hover: rgba(123, 47, 190, 0.06);
     --background-message-automod: rgba(123, 47, 190, 0.05);
     --background-message-automod-hover: rgba(123, 47, 190, 0.08);
 
-    /* Redesign token overrides */
-    --bg-base-primary: #000000;
-    --bg-base-secondary: #09090F;
-    --bg-base-tertiary: #0F0F1A;
+    /* Redesign token overrides — transparent */
+    --bg-base-primary: rgba(0, 0, 0, 0.5);
+    --bg-base-secondary: rgba(9, 9, 15, 0.4);
+    --bg-base-tertiary: rgba(15, 15, 26, 0.35);
     --bg-mod-faint: rgba(123, 47, 190, 0.04);
     --bg-mod-subtle: rgba(123, 47, 190, 0.08);
     --bg-mod-strong: rgba(123, 47, 190, 0.15);
-    --bg-surface-overlay: #09090F;
-    --bg-surface-raised: #0F0F1A;
-    --border-faint: rgba(54, 32, 80, 0.3);
-    --border-subtle: #362050;
+    --bg-surface-overlay: rgba(9, 9, 15, 0.65);
+    --bg-surface-raised: rgba(15, 15, 26, 0.45);
+    --border-faint: rgba(54, 32, 80, 0.2);
+    --border-subtle: rgba(54, 32, 80, 0.5);
     --border-strong: #6B42A0;
     --text-primary: #EED4FF;
     --text-secondary: #D4A0FF;
@@ -130,75 +130,119 @@
 }
 
 /* ============================================
-   SCROLLBAR — Ultra-thin 4px purple
+   BASE APP — True black behind everything
    ============================================ */
 
-::-webkit-scrollbar {
-    width: 4px !important;
-    height: 4px !important;
-}
-
-::-webkit-scrollbar-track {
-    background: transparent !important;
-}
-
-::-webkit-scrollbar-thumb {
-    background: #6B42A0 !important;
-    border-radius: 4px !important;
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #9D4EDD !important;
-}
-
-::-webkit-scrollbar-corner {
-    background: transparent !important;
+html, body,
+#app-mount {
+    background: #000000 !important;
 }
 
 /* ============================================
-   BORDERS — 1px solid #362050 everywhere
+   SCROLLBAR — Ultra-thin 4px, ghostly
    ============================================ */
 
-/* Channel sidebar */
+::-webkit-scrollbar { width: 4px !important; height: 4px !important; }
+::-webkit-scrollbar-track { background: transparent !important; }
+::-webkit-scrollbar-thumb { background: rgba(107, 66, 160, 0.4) !important; border-radius: 4px !important; }
+::-webkit-scrollbar-thumb:hover { background: rgba(157, 78, 221, 0.6) !important; }
+::-webkit-scrollbar-corner { background: transparent !important; }
+
+/* ============================================
+   GLOBAL ACRYLIC — blur everything
+   ============================================ */
+
+/* Server list */
 nav[class*="guilds"] {
-    border-right: 1px solid #362050 !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(24px) saturate(1.2) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+    border-right: 1px solid rgba(123, 47, 190, 0.12) !important;
 }
 
+/* Channel sidebar */
 div[class*="sidebar"] {
-    border-right: 1px solid #362050 !important;
-    background: #000000 !important;
+    background: rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: blur(24px) saturate(1.2) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+    border-right: 1px solid rgba(123, 47, 190, 0.1) !important;
 }
 
 /* Chat area */
 div[class*="chat"] > div[class*="content"] {
-    background: #000000 !important;
+    background: rgba(0, 0, 0, 0.25) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
 }
 
 /* Members list */
 div[class*="membersWrap"] {
-    border-left: 1px solid #362050 !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(20px) saturate(1.2) !important;
+    -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
+    border-left: 1px solid rgba(123, 47, 190, 0.1) !important;
 }
 
-/* User panel */
+div[class*="members"] {
+    background: transparent !important;
+}
+
+/* User panel (bottom) */
 section[class*="panels"] {
-    border-top: 1px solid #362050 !important;
-    background: #09090F !important;
+    background: rgba(9, 9, 15, 0.5) !important;
+    backdrop-filter: blur(24px) saturate(1.3) !important;
+    -webkit-backdrop-filter: blur(24px) saturate(1.3) !important;
+    border-top: 1px solid rgba(123, 47, 190, 0.12) !important;
 }
 
 /* Header / toolbar */
 section[class*="title"] {
-    border-bottom: 1px solid #362050 !important;
+    background: rgba(0, 0, 0, 0.3) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+    border-bottom: 1px solid rgba(123, 47, 190, 0.1) !important;
+}
+
+/* DMs / private channels */
+div[class*="privateChannels"] {
+    background: transparent !important;
+}
+
+/* Friends / home */
+div[class*="peopleColumn"] {
+    background: rgba(0, 0, 0, 0.2) !important;
+    backdrop-filter: blur(16px) !important;
+    -webkit-backdrop-filter: blur(16px) !important;
+}
+
+/* Settings */
+div[class*="contentRegion"] {
+    background: rgba(0, 0, 0, 0.35) !important;
+    backdrop-filter: blur(20px) !important;
+    -webkit-backdrop-filter: blur(20px) !important;
+}
+
+div[class*="sidebarRegion"] {
+    background: rgba(9, 9, 15, 0.4) !important;
+    backdrop-filter: blur(24px) !important;
+    -webkit-backdrop-filter: blur(24px) !important;
+    border-right: 1px solid rgba(123, 47, 190, 0.1) !important;
+}
+
+div[class*="contentColumn"] {
+    background: transparent !important;
+}
+
+/* Make scrollers transparent so blur shows */
+div[class*="scroller"][class*="thin"],
+div[class*="scroller"][class*="auto"] {
+    background: transparent !important;
 }
 
 /* ============================================
-   CHANNELS / SIDEBAR
+   CHANNEL LIST — Glow effects
    ============================================ */
 
-div[class*="scroller"][class*="thin"] {
-    background: #000000 !important;
-}
-
-/* Channel name hover glow */
 div[class*="containerDefault"] div[class*="name"],
 div[class*="wrapper"][class*="modeMuted"] div[class*="name"],
 a[class*="channel"] div[class*="name"] {
@@ -211,7 +255,7 @@ a[class*="channel"]:hover div[class*="name"] {
     color: #EED4FF !important;
 }
 
-/* Active channel — left border accent glow */
+/* Active channel — glowing left accent */
 div[class*="containerDefault"][class*="modeSelected"],
 a[class*="channel"][class*="selected"] {
     border-left: 3px solid #9D4EDD !important;
@@ -219,69 +263,66 @@ a[class*="channel"][class*="selected"] {
     background: rgba(123, 47, 190, 0.15) !important;
 }
 
-/* Channel categories */
 div[class*="containerDefault"] svg[class*="icon"] {
     color: #6B42A0 !important;
 }
 
 /* ============================================
-   MESSAGE AREA
+   MESSAGES
    ============================================ */
 
-/* Message hover */
 div[class*="message"][class*="cozy"]:hover {
     background: rgba(123, 47, 190, 0.06) !important;
 }
 
-/* Mention highlight */
 div[class*="message"][class*="mentioned"] {
-    background: rgba(123, 47, 190, 0.15) !important;
+    background: rgba(123, 47, 190, 0.12) !important;
     border-left: 3px solid #9D4EDD !important;
 }
 
 div[class*="message"][class*="mentioned"]:hover {
-    background: rgba(123, 47, 190, 0.2) !important;
+    background: rgba(123, 47, 190, 0.18) !important;
 }
 
-/* Chat input */
+/* Chat input — glassy */
 div[class*="channelTextArea"] {
-    border: 1px solid #362050 !important;
+    border: 1px solid rgba(54, 32, 80, 0.5) !important;
     border-radius: 8px !important;
 }
 
 div[class*="channelTextArea"] div[class*="inner"] {
-    background: #12121F !important;
+    background: rgba(18, 18, 31, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
 }
 
-/* Input focus glow */
 div[class*="channelTextArea"]:focus-within {
-    border-color: #7B2FBE !important;
-    box-shadow: 0 0 8px rgba(123, 47, 190, 0.4), 0 0 16px rgba(123, 47, 190, 0.15) !important;
+    border-color: rgba(123, 47, 190, 0.6) !important;
+    box-shadow: 0 0 12px rgba(123, 47, 190, 0.3), 0 0 24px rgba(123, 47, 190, 0.1) !important;
 }
 
 /* ============================================
-   EMBEDS
+   EMBEDS — Frosted glass
    ============================================ */
 
 article[class*="embedWrapper"],
 div[class*="embed"] {
-    background: #0F0F1A !important;
-    border: 1px solid #362050 !important;
-    border-left: 3px solid #362050 !important;
+    background: rgba(15, 15, 26, 0.5) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
+    border-left: 3px solid rgba(54, 32, 80, 0.6) !important;
 }
 
 /* ============================================
    CODE BLOCKS
    ============================================ */
 
-pre,
-code {
-    font-family: "JetBrains Mono", monospace !important;
-}
+pre, code { font-family: "JetBrains Mono", monospace !important; }
 
 code.inline {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.6) !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
     color: #D4A0FF !important;
 }
 
@@ -289,40 +330,39 @@ div[class*="codeBlockSyntax"],
 div[class*="codeBlock"],
 pre code,
 div[class*="markup"] pre {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.6) !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
     border-radius: 6px !important;
 }
 
 /* ============================================
-   BUTTONS
+   BUTTONS — Glowing
    ============================================ */
 
-/* Primary button */
 button[class*="lookFilled"][class*="colorBrand"],
 button[class*="lookFilled"][class*="colorGreen"],
 div[class*="button"][class*="lookFilled"][class*="colorBrand"] {
-    background: #7B2FBE !important;
+    background: rgba(123, 47, 190, 0.8) !important;
     color: #EED4FF !important;
-    border: none !important;
-    transition: background 0.2s ease, box-shadow 0.2s ease !important;
+    border: 1px solid rgba(157, 78, 221, 0.3) !important;
+    backdrop-filter: blur(8px) !important;
+    transition: all 0.2s ease !important;
 }
 
 button[class*="lookFilled"][class*="colorBrand"]:hover,
 button[class*="lookFilled"][class*="colorGreen"]:hover,
 div[class*="button"][class*="lookFilled"][class*="colorBrand"]:hover {
-    background: #9D4EDD !important;
-    box-shadow: 0 0 12px rgba(157, 78, 221, 0.4) !important;
+    background: rgba(157, 78, 221, 0.9) !important;
+    box-shadow: 0 0 16px rgba(157, 78, 221, 0.5), 0 0 32px rgba(123, 47, 190, 0.2) !important;
 }
 
-/* Outlined buttons */
 button[class*="lookOutlined"] {
-    border-color: #362050 !important;
+    border-color: rgba(54, 32, 80, 0.5) !important;
     color: #D4A0FF !important;
 }
 
 button[class*="lookOutlined"]:hover {
-    border-color: #7B2FBE !important;
+    border-color: rgba(123, 47, 190, 0.6) !important;
     background: rgba(123, 47, 190, 0.1) !important;
 }
 
@@ -336,7 +376,7 @@ button[class*="lookOutlined"]:hover {
 }
 
 /* ============================================
-   GLASSMORPHISM — Popouts & Modals
+   GLASSMORPHISM — Popouts, Modals, Menus
    ============================================ */
 
 div[class*="layerContainer"] div[class*="popout"],
@@ -344,112 +384,92 @@ div[class*="popout"][class*="popoutBottom"],
 div[class*="popout"][class*="popoutTop"],
 div[class*="tooltip"],
 div[class*="autocomplete"] {
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    background: rgba(9, 9, 15, 0.85) !important;
-    border: 1px solid #362050 !important;
+    backdrop-filter: blur(28px) saturate(1.3) !important;
+    -webkit-backdrop-filter: blur(28px) saturate(1.3) !important;
+    background: rgba(0, 0, 0, 0.55) !important;
+    border: 1px solid rgba(123, 47, 190, 0.15) !important;
 }
 
 div[class*="modal"],
 div[class*="root"][role="dialog"],
 div[class*="layer"] div[class*="focusLock"] > div[class*="root"] {
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    background: rgba(9, 9, 15, 0.92) !important;
-    border: 1px solid #362050 !important;
+    backdrop-filter: blur(32px) saturate(1.4) !important;
+    -webkit-backdrop-filter: blur(32px) saturate(1.4) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(123, 47, 190, 0.15) !important;
     border-radius: 12px !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 40px rgba(123, 47, 190, 0.08) !important;
 }
 
 /* Context menus */
 div[class*="menu"][role="menu"],
 div[class*="contextMenu"] {
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    background: rgba(9, 9, 15, 0.9) !important;
-    border: 1px solid #362050 !important;
+    backdrop-filter: blur(28px) saturate(1.3) !important;
+    -webkit-backdrop-filter: blur(28px) saturate(1.3) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(123, 47, 190, 0.15) !important;
     border-radius: 8px !important;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
 }
 
 /* ============================================
    SERVER LIST
    ============================================ */
 
-/* Server list background */
-nav[class*="guilds"] {
-    background: #000000 !important;
-}
-
-/* Server list separator — purple gradient line */
+/* Server separator — purple gradient line */
 div[class*="guildSeparator"] {
-    background: linear-gradient(90deg, transparent, #7B2FBE, #9D4EDD, #7B2FBE, transparent) !important;
+    background: linear-gradient(90deg, transparent, rgba(123, 47, 190, 0.5), rgba(157, 78, 221, 0.6), rgba(123, 47, 190, 0.5), transparent) !important;
     height: 2px !important;
     border-radius: 1px !important;
-    opacity: 0.8 !important;
 }
 
-/* Server icons */
 div[class*="wrapper"][data-list-item-id] foreignObject img,
 div[class*="wrapper"][data-list-item-id] svg[class*="icon"] {
-    transition: box-shadow 0.2s ease !important;
+    transition: box-shadow 0.2s ease, filter 0.2s ease !important;
 }
 
 /* ============================================
-   USER AVATARS — Purple glow on hover
+   AVATARS — Purple glow on hover
    ============================================ */
+
+img[class*="avatar"], div[class*="avatar"] img {
+    transition: box-shadow 0.3s ease !important;
+}
 
 img[class*="avatar"]:hover,
 div[class*="avatar"]:hover img,
 div[class*="avatarWrapper"]:hover img {
     box-shadow: 0 0 10px rgba(157, 78, 221, 0.5), 0 0 20px rgba(123, 47, 190, 0.25) !important;
-    transition: box-shadow 0.3s ease !important;
-}
-
-img[class*="avatar"],
-div[class*="avatar"] img {
-    transition: box-shadow 0.3s ease !important;
 }
 
 /* ============================================
    TYPING INDICATOR
    ============================================ */
 
-div[class*="typing"] {
-    color: #D4A0FF !important;
-}
-
-div[class*="typing"] span[class*="text"] {
-    color: #D4A0FF !important;
-}
-
-div[class*="typing"] span:not([class]) {
-    color: #9D4EDD !important;
-}
-
-/* Typing dots */
+div[class*="typing"] { color: #D4A0FF !important; }
+div[class*="typing"] span[class*="text"] { color: #D4A0FF !important; }
+div[class*="typing"] span:not([class]) { color: #9D4EDD !important; }
 div[class*="typing"] span[class*="dots"] span,
-div[class*="typing"] [class*="spinner"] span {
-    background: #9D4EDD !important;
-}
+div[class*="typing"] [class*="spinner"] span { background: #9D4EDD !important; }
 
 /* ============================================
    BADGES — Unread & Mention
    ============================================ */
 
-/* Unread badge */
 div[class*="numberBadge"],
 div[class*="badge"][class*="textBadge"] {
-    background: #9D4EDD !important;
+    background: rgba(157, 78, 221, 0.85) !important;
     color: #000000 !important;
     font-weight: 700 !important;
+    box-shadow: 0 0 8px rgba(157, 78, 221, 0.4) !important;
 }
 
-/* Mention badge */
 div[class*="mentionsBadge"] {
-    background: #7B2FBE !important;
+    background: rgba(123, 47, 190, 0.85) !important;
     color: #EED4FF !important;
+    box-shadow: 0 0 8px rgba(123, 47, 190, 0.4) !important;
 }
 
-/* Unread pill */
 div[class*="unreadPill"],
 div[class*="bar"][class*="unread"] {
     background: #9D4EDD !important;
@@ -457,12 +477,11 @@ div[class*="bar"][class*="unread"] {
 }
 
 /* ============================================
-   NITRO / BOOST — Override pink to purple
+   NITRO / BOOST — Purple override
    ============================================ */
 
 div[class*="premiumGuildSubscriptionBanner"],
 div[class*="boost"],
-svg[class*="premiumIconWrapper"],
 div[class*="nitroHeader"],
 div[class*="premiumPromo"] {
     --premium-tier-2-purple-for-gradients: #7B2FBE !important;
@@ -470,12 +489,10 @@ div[class*="premiumPromo"] {
     --premium-tier-2-purple: #7B2FBE !important;
 }
 
-/* Boost bar */
 div[class*="progressBar"] div[class*="barInner"] {
     background: linear-gradient(90deg, #7B2FBE, #9D4EDD) !important;
 }
 
-/* Nitro badge glow */
 div[class*="premiumIcon"],
 svg[class*="premiumIcon"] {
     color: #9D4EDD !important;
@@ -483,23 +500,9 @@ svg[class*="premiumIcon"] {
 }
 
 /* ============================================
-   SETTINGS / PANELS
+   SETTINGS — Glass panels
    ============================================ */
 
-div[class*="contentRegion"] {
-    background: #000000 !important;
-}
-
-div[class*="sidebarRegion"] {
-    background: #09090F !important;
-    border-right: 1px solid #362050 !important;
-}
-
-div[class*="contentColumn"] {
-    background: #000000 !important;
-}
-
-/* Settings items */
 div[class*="item"][class*="selected"] {
     background: rgba(123, 47, 190, 0.15) !important;
     color: #EED4FF !important;
@@ -511,91 +514,100 @@ div[class*="item"][class*="selected"] {
 
 div[class*="search"] div[class*="searchBar"],
 div[class*="quickswitcher"] input {
-    background: #12121F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(18, 18, 31, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
     color: #EED4FF !important;
 }
 
 div[class*="search"] div[class*="searchBar"]:focus-within {
-    border-color: #7B2FBE !important;
-    box-shadow: 0 0 8px rgba(123, 47, 190, 0.3) !important;
+    border-color: rgba(123, 47, 190, 0.5) !important;
+    box-shadow: 0 0 12px rgba(123, 47, 190, 0.25) !important;
 }
 
 /* ============================================
-   REACTIONS
+   REACTIONS — Glassy
    ============================================ */
 
 div[class*="reaction"] {
     background: rgba(123, 47, 190, 0.08) !important;
-    border: 1px solid #362050 !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
+    backdrop-filter: blur(8px) !important;
 }
 
 div[class*="reaction"]:hover {
     background: rgba(123, 47, 190, 0.15) !important;
-    border-color: #6B42A0 !important;
+    border-color: rgba(107, 66, 160, 0.5) !important;
 }
 
 div[class*="reaction"][class*="reactionMe"] {
     background: rgba(123, 47, 190, 0.2) !important;
-    border-color: #7B2FBE !important;
+    border-color: rgba(123, 47, 190, 0.6) !important;
 }
 
 /* ============================================
-   VOICE CONNECTED
+   VOICE
    ============================================ */
 
 div[class*="rtcConnectionStatus"] {
-    border-top: 1px solid #362050 !important;
+    border-top: 1px solid rgba(54, 32, 80, 0.4) !important;
+}
+
+div[class*="callContainer"],
+div[class*="voiceCallWrapper"] {
+    background: rgba(0, 0, 0, 0.5) !important;
 }
 
 /* ============================================
-   FORMS & INPUTS
+   FORMS & INPUTS — Frosted
    ============================================ */
 
 input[class*="inputDefault"],
 textarea[class*="inputDefault"],
 div[class*="input"] input,
 div[class*="textArea"] textarea {
-    background: #12121F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(18, 18, 31, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
     color: #EED4FF !important;
     font-family: "Rajdhani", sans-serif !important;
 }
 
 input[class*="inputDefault"]:focus,
 textarea[class*="inputDefault"]:focus {
-    border-color: #7B2FBE !important;
-    box-shadow: 0 0 8px rgba(123, 47, 190, 0.4), 0 0 16px rgba(123, 47, 190, 0.15) !important;
+    border-color: rgba(123, 47, 190, 0.6) !important;
+    box-shadow: 0 0 12px rgba(123, 47, 190, 0.3), 0 0 24px rgba(123, 47, 190, 0.1) !important;
 }
 
-/* Select / dropdowns */
 div[class*="css-1dimb5e-singleValue"],
 div[class*="lookFilled"][class*="select"] {
-    background: #12121F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(18, 18, 31, 0.4) !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
 }
 
 /* ============================================
-   THREAD & FORUM
+   THREADS / FORUMS
    ============================================ */
 
 div[class*="container"][class*="thread"],
 div[class*="mainCard"] {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
 /* ============================================
-   USER PROFILE / POPOUT
+   USER PROFILE / POPOUT — Deep glass
    ============================================ */
 
 div[class*="userProfileOuter"],
 div[class*="userPopoutOuter"] {
-    background: rgba(9, 9, 15, 0.95) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
-    border: 1px solid #362050 !important;
+    background: rgba(0, 0, 0, 0.55) !important;
+    backdrop-filter: blur(32px) saturate(1.4) !important;
+    -webkit-backdrop-filter: blur(32px) saturate(1.4) !important;
+    border: 1px solid rgba(123, 47, 190, 0.15) !important;
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(123, 47, 190, 0.06) !important;
 }
 
 div[class*="userProfileInner"],
@@ -603,75 +615,52 @@ div[class*="userPopoutInner"] {
     background: transparent !important;
 }
 
-/* Role pills — keep their native colors */
 div[class*="role"] {
-    border: 1px solid #362050 !important;
+    border: 1px solid rgba(54, 32, 80, 0.4) !important;
     background: rgba(123, 47, 190, 0.06) !important;
 }
 
 /* ============================================
-   EMOJI PICKER / STICKER PICKER
+   EMOJI / STICKER PICKER — Frosted
    ============================================ */
 
 div[class*="emojiPicker"],
 div[class*="contentWrapper"][class*="picker"],
 div[class*="stickerPicker"] {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
+    background: rgba(0, 0, 0, 0.55) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
+    backdrop-filter: blur(28px) saturate(1.3) !important;
+    -webkit-backdrop-filter: blur(28px) saturate(1.3) !important;
 }
 
 div[class*="emojiPicker"] div[class*="header"],
 div[class*="stickerPicker"] div[class*="header"] {
-    background: #0F0F1A !important;
-    border-bottom: 1px solid #362050 !important;
+    background: rgba(15, 15, 26, 0.4) !important;
+    border-bottom: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
 /* ============================================
-   CALL / VOICE CHANNEL
-   ============================================ */
-
-div[class*="callContainer"] {
-    background: #000000 !important;
-}
-
-div[class*="voiceCallWrapper"] {
-    background: #000000 !important;
-}
-
-/* ============================================
-   NOTICE / BANNER BAR
+   NOTICES / BANNERS
    ============================================ */
 
 div[class*="notice"][class*="colorDefault"] {
-    background: #0F0F1A !important;
-    border-bottom: 1px solid #362050 !important;
+    background: rgba(15, 15, 26, 0.6) !important;
+    backdrop-filter: blur(16px) !important;
+    border-bottom: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
 /* ============================================
-   AUTOCOMPLETE / MENTION LIST
+   AUTOCOMPLETE
    ============================================ */
 
 div[class*="autocomplete"] {
-    background: rgba(9, 9, 15, 0.95) !important;
-    border: 1px solid #362050 !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
+    backdrop-filter: blur(24px) !important;
 }
 
 div[class*="autocomplete"] div[class*="selectorSelected"] {
     background: rgba(123, 47, 190, 0.15) !important;
-}
-
-/* ============================================
-   HOME / FRIENDS LIST
-   ============================================ */
-
-div[class*="peopleColumn"] {
-    background: #000000 !important;
-}
-
-div[class*="peopleListItem"]:hover {
-    background: rgba(123, 47, 190, 0.06) !important;
 }
 
 /* ============================================
@@ -680,10 +669,9 @@ div[class*="peopleListItem"]:hover {
 
 div[class*="divider"],
 div[class*="separator"]:not([class*="guildSeparator"]) {
-    border-color: #362050 !important;
+    border-color: rgba(54, 32, 80, 0.3) !important;
 }
 
-/* Unread divider */
 div[class*="divider"][class*="isUnread"] {
     border-color: #9D4EDD !important;
     color: #9D4EDD !important;
@@ -694,50 +682,18 @@ div[class*="divider"][class*="isUnread"] span {
 }
 
 /* ============================================
-   DM LIST
+   MESSAGE TOOLBAR
    ============================================ */
-
-div[class*="privateChannels"] {
-    background: #000000 !important;
-}
-
-/* ============================================
-   MESSAGE TOOLBAR / ACTION BUTTONS
-   ============================================ */
-
-div[class*="buttonContainer"] div[class*="wrapper"],
-div[class*="buttons"] div[class*="button"] {
-    transition: color 0.15s ease !important;
-}
 
 div[class*="message"]:hover div[class*="buttons"] {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
-    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.3) !important;
 }
 
 /* ============================================
-   STATUS COLORS — Keep defaults
-   ============================================ */
-
-rect[fill="#23a55a"],
-div[class*="status"][style*="background-color: rgb(35, 165, 90)"] {
-    /* Online green stays */
-}
-
-rect[fill="#f0b232"],
-div[class*="status"][style*="background-color: rgb(240, 178, 50)"] {
-    /* Idle yellow stays */
-}
-
-rect[fill="#f23f43"],
-div[class*="status"][style*="background-color: rgb(242, 63, 67)"] {
-    /* DND red stays */
-}
-
-/* ============================================
-   HEADING / DISPLAY FONT OVERRIDES
+   HEADINGS — Orbitron display font
    ============================================ */
 
 h1, h2, h3,
@@ -748,7 +704,6 @@ div[class*="name"][class*="header"] {
     letter-spacing: 0.03em !important;
 }
 
-/* Server name in sidebar header */
 header[class*="header"] h1,
 div[class*="headerContent"] div[class*="name"] {
     font-family: "Orbitron", sans-serif !important;
@@ -759,40 +714,23 @@ div[class*="headerContent"] div[class*="name"] {
 }
 
 /* ============================================
-   LINK STYLING
+   LINKS — Glowing
    ============================================ */
 
-a {
-    color: #B76EFF !important;
-}
+a { color: #B76EFF !important; }
+a:hover { text-shadow: 0 0 6px rgba(183, 110, 255, 0.4) !important; }
 
-a:hover {
-    text-shadow: 0 0 6px rgba(183, 110, 255, 0.4) !important;
-}
-
-/* Don't override role colors in chat */
+/* Don't override role colors */
 span[class*="roleColor"],
-span[style*="color:"] {
-    color: inherit !important;
-}
+span[style*="color:"] { color: inherit !important; }
 
 /* ============================================
    MEMBER LIST
    ============================================ */
 
-div[class*="members"] {
-    background: #000000 !important;
-}
+div[class*="member"]:hover { background: rgba(123, 47, 190, 0.1) !important; }
+div[class*="member"][class*="selected"] { background: rgba(123, 47, 190, 0.15) !important; }
 
-div[class*="member"]:hover {
-    background: rgba(123, 47, 190, 0.1) !important;
-}
-
-div[class*="member"][class*="selected"] {
-    background: rgba(123, 47, 190, 0.15) !important;
-}
-
-/* Member list group headers */
 h2[class*="membersGroup"] {
     font-family: "Orbitron", sans-serif !important;
     color: #6B42A0 !important;
@@ -806,11 +744,7 @@ h2[class*="membersGroup"] {
    ============================================ */
 
 div[class*="wanderingCubes"] span,
-div[class*="spinner"] span[class*="inner"] {
-    background: #9D4EDD !important;
-}
-
-/* Pulse animations */
+div[class*="spinner"] span[class*="inner"],
 div[class*="pulsingEllipsis"] span {
     background: #9D4EDD !important;
 }
@@ -820,19 +754,20 @@ div[class*="pulsingEllipsis"] span {
    ============================================ */
 
 span[class*="timestamp"] {
-    color: #6B42A0 !important;
+    color: rgba(107, 66, 160, 0.7) !important;
     font-family: "JetBrains Mono", monospace !important;
     font-size: 0.7rem !important;
 }
 
 /* ============================================
-   CARDS
+   CARDS — Frosted
    ============================================ */
 
 div[class*="card"],
 div[class*="cardPrimary"] {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
 }
 
@@ -841,50 +776,52 @@ div[class*="cardPrimary"] {
    ============================================ */
 
 div[class*="newMessagesBar"] {
-    background: #7B2FBE !important;
+    background: rgba(123, 47, 190, 0.8) !important;
+    backdrop-filter: blur(12px) !important;
     color: #EED4FF !important;
     border-radius: 0 0 8px 8px !important;
-    opacity: 0.95 !important;
+    box-shadow: 0 4px 16px rgba(123, 47, 190, 0.3) !important;
 }
 
 /* ============================================
-   STAGE / EVENTS
+   STAGES / EVENTS
    ============================================ */
 
 div[class*="stageListItem"],
 div[class*="eventCard"] {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
 /* ============================================
-   GAME / ACTIVITY PRESENCE
+   ACTIVITY
    ============================================ */
 
 div[class*="activityPanel"] {
-    background: #09090F !important;
-    border-top: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.4) !important;
+    backdrop-filter: blur(16px) !important;
+    border-top: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
 /* ============================================
-   UPLOAD / ATTACHMENT AREA
+   UPLOADS / ATTACHMENTS — Frosted
    ============================================ */
 
 div[class*="uploadDropModal"] {
-    background: rgba(0, 0, 0, 0.85) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
+    background: rgba(0, 0, 0, 0.6) !important;
+    backdrop-filter: blur(28px) !important;
 }
 
 div[class*="uploadDropModal"] div[class*="inner"] {
-    border: 2px dashed #7B2FBE !important;
+    border: 2px dashed rgba(123, 47, 190, 0.5) !important;
     border-radius: 12px !important;
 }
 
-/* Attachment cards */
 div[class*="attachment"] {
-    background: #09090F !important;
-    border: 1px solid #362050 !important;
+    background: rgba(9, 9, 15, 0.4) !important;
+    backdrop-filter: blur(8px) !important;
+    border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
 }
 
@@ -899,11 +836,11 @@ div[class*="toolbar"] svg {
 
 div[class*="toolbar"] svg:hover {
     color: #EED4FF !important;
-    filter: drop-shadow(0 0 4px rgba(157, 78, 221, 0.5)) !important;
+    filter: drop-shadow(0 0 6px rgba(157, 78, 221, 0.5)) !important;
 }
 
 /* ============================================
-   SWITCH / TOGGLE
+   TOGGLES
    ============================================ */
 
 div[class*="container"][class*="checked"] {
@@ -919,23 +856,17 @@ div[class*="tabBar"] div[class*="item"][class*="selected"] {
     color: #EED4FF !important;
 }
 
-div[class*="tabBar"] div[class*="item"] {
-    color: #6B42A0 !important;
-}
-
-div[class*="tabBar"] div[class*="item"]:hover {
-    color: #D4A0FF !important;
-}
+div[class*="tabBar"] div[class*="item"] { color: #6B42A0 !important; }
+div[class*="tabBar"] div[class*="item"]:hover { color: #D4A0FF !important; }
 
 /* ============================================
-   FINAL POLISH — Transitions on all surfaces
+   TRANSITIONS — Smooth everything
    ============================================ */
 
 div[class*="containerDefault"],
 div[class*="channel"],
 div[class*="member"],
 div[class*="message"],
-a,
-button {
+a, button {
     transition: background 0.15s ease, color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease !important;
 }
