@@ -149,37 +149,33 @@ html, body,
 ::-webkit-scrollbar-corner { background: transparent !important; }
 
 /* ============================================
-   GLOBAL ACRYLIC — blur everything
+   LAYOUT PANELS — Lightweight acrylic (blur on 4 panels only)
    ============================================ */
 
 /* Server list */
 nav[class*="guilds"] {
-    background: rgba(0, 0, 0, 0.3) !important;
-    backdrop-filter: blur(24px) saturate(1.2) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
     border-right: 1px solid rgba(123, 47, 190, 0.12) !important;
 }
 
 /* Channel sidebar */
 div[class*="sidebar"] {
-    background: rgba(0, 0, 0, 0.35) !important;
-    backdrop-filter: blur(24px) saturate(1.2) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(1.2) !important;
+    background: rgba(0, 0, 0, 0.45) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
     border-right: 1px solid rgba(123, 47, 190, 0.1) !important;
 }
 
-/* Chat area */
+/* Chat area — NO blur, just transparent */
 div[class*="chat"] > div[class*="content"] {
-    background: rgba(0, 0, 0, 0.25) !important;
-    backdrop-filter: blur(16px) !important;
-    -webkit-backdrop-filter: blur(16px) !important;
+    background: rgba(0, 0, 0, 0.3) !important;
 }
 
-/* Members list */
+/* Members list — NO blur */
 div[class*="membersWrap"] {
-    background: rgba(0, 0, 0, 0.3) !important;
-    backdrop-filter: blur(20px) saturate(1.2) !important;
-    -webkit-backdrop-filter: blur(20px) saturate(1.2) !important;
+    background: rgba(0, 0, 0, 0.35) !important;
     border-left: 1px solid rgba(123, 47, 190, 0.1) !important;
 }
 
@@ -189,17 +185,15 @@ div[class*="members"] {
 
 /* User panel (bottom) */
 section[class*="panels"] {
-    background: rgba(9, 9, 15, 0.5) !important;
-    backdrop-filter: blur(24px) saturate(1.3) !important;
-    -webkit-backdrop-filter: blur(24px) saturate(1.3) !important;
+    background: rgba(9, 9, 15, 0.6) !important;
+    backdrop-filter: blur(12px) !important;
+    -webkit-backdrop-filter: blur(12px) !important;
     border-top: 1px solid rgba(123, 47, 190, 0.12) !important;
 }
 
-/* Header / toolbar */
+/* Header / toolbar — NO blur */
 section[class*="title"] {
-    background: rgba(0, 0, 0, 0.3) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
+    background: rgba(0, 0, 0, 0.4) !important;
     border-bottom: 1px solid rgba(123, 47, 190, 0.1) !important;
 }
 
@@ -210,22 +204,16 @@ div[class*="privateChannels"] {
 
 /* Friends / home */
 div[class*="peopleColumn"] {
-    background: rgba(0, 0, 0, 0.2) !important;
-    backdrop-filter: blur(16px) !important;
-    -webkit-backdrop-filter: blur(16px) !important;
+    background: rgba(0, 0, 0, 0.25) !important;
 }
 
-/* Settings */
+/* Settings — NO blur to avoid breaking dropdowns */
 div[class*="contentRegion"] {
-    background: rgba(0, 0, 0, 0.35) !important;
-    backdrop-filter: blur(20px) !important;
-    -webkit-backdrop-filter: blur(20px) !important;
+    background: rgba(0, 0, 0, 0.45) !important;
 }
 
 div[class*="sidebarRegion"] {
-    background: rgba(9, 9, 15, 0.4) !important;
-    backdrop-filter: blur(24px) !important;
-    -webkit-backdrop-filter: blur(24px) !important;
+    background: rgba(9, 9, 15, 0.5) !important;
     border-right: 1px solid rgba(123, 47, 190, 0.1) !important;
 }
 
@@ -233,7 +221,7 @@ div[class*="contentColumn"] {
     background: transparent !important;
 }
 
-/* Make scrollers transparent so blur shows */
+/* Make scrollers transparent */
 div[class*="scroller"][class*="thin"],
 div[class*="scroller"][class*="auto"] {
     background: transparent !important;
@@ -284,16 +272,14 @@ div[class*="message"][class*="mentioned"]:hover {
     background: rgba(123, 47, 190, 0.18) !important;
 }
 
-/* Chat input — glassy */
+/* Chat input */
 div[class*="channelTextArea"] {
     border: 1px solid rgba(54, 32, 80, 0.5) !important;
     border-radius: 8px !important;
 }
 
 div[class*="channelTextArea"] div[class*="inner"] {
-    background: rgba(18, 18, 31, 0.4) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
+    background: rgba(18, 18, 31, 0.5) !important;
 }
 
 div[class*="channelTextArea"]:focus-within {
@@ -307,9 +293,7 @@ div[class*="channelTextArea"]:focus-within {
 
 article[class*="embedWrapper"],
 div[class*="embed"] {
-    background: rgba(15, 15, 26, 0.5) !important;
-    backdrop-filter: blur(12px) !important;
-    -webkit-backdrop-filter: blur(12px) !important;
+    background: rgba(15, 15, 26, 0.6) !important;
     border: 1px solid rgba(54, 32, 80, 0.4) !important;
     border-left: 3px solid rgba(54, 32, 80, 0.6) !important;
 }
@@ -345,7 +329,6 @@ div[class*="button"][class*="lookFilled"][class*="colorBrand"] {
     background: rgba(123, 47, 190, 0.8) !important;
     color: #EED4FF !important;
     border: 1px solid rgba(157, 78, 221, 0.3) !important;
-    backdrop-filter: blur(8px) !important;
     transition: all 0.2s ease !important;
 }
 
@@ -384,18 +367,14 @@ div[class*="popout"][class*="popoutBottom"],
 div[class*="popout"][class*="popoutTop"],
 div[class*="tooltip"],
 div[class*="autocomplete"] {
-    backdrop-filter: blur(28px) saturate(1.3) !important;
-    -webkit-backdrop-filter: blur(28px) saturate(1.3) !important;
-    background: rgba(0, 0, 0, 0.55) !important;
+    background: rgba(9, 9, 15, 0.85) !important;
     border: 1px solid rgba(123, 47, 190, 0.15) !important;
 }
 
 div[class*="modal"],
 div[class*="root"][role="dialog"],
 div[class*="layer"] div[class*="focusLock"] > div[class*="root"] {
-    backdrop-filter: blur(32px) saturate(1.4) !important;
-    -webkit-backdrop-filter: blur(32px) saturate(1.4) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(9, 9, 15, 0.9) !important;
     border: 1px solid rgba(123, 47, 190, 0.15) !important;
     border-radius: 12px !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.4), 0 0 40px rgba(123, 47, 190, 0.08) !important;
@@ -404,9 +383,7 @@ div[class*="layer"] div[class*="focusLock"] > div[class*="root"] {
 /* Context menus */
 div[class*="menu"][role="menu"],
 div[class*="contextMenu"] {
-    backdrop-filter: blur(28px) saturate(1.3) !important;
-    -webkit-backdrop-filter: blur(28px) saturate(1.3) !important;
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(9, 9, 15, 0.9) !important;
     border: 1px solid rgba(123, 47, 190, 0.15) !important;
     border-radius: 8px !important;
     box-shadow: 0 4px 16px rgba(0, 0, 0, 0.4) !important;
@@ -514,8 +491,7 @@ div[class*="item"][class*="selected"] {
 
 div[class*="search"] div[class*="searchBar"],
 div[class*="quickswitcher"] input {
-    background: rgba(18, 18, 31, 0.4) !important;
-    backdrop-filter: blur(12px) !important;
+    background: rgba(18, 18, 31, 0.5) !important;
     border: 1px solid rgba(54, 32, 80, 0.4) !important;
     color: #EED4FF !important;
 }
@@ -533,7 +509,6 @@ div[class*="reaction"] {
     background: rgba(123, 47, 190, 0.08) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
-    backdrop-filter: blur(8px) !important;
 }
 
 div[class*="reaction"]:hover {
@@ -567,8 +542,7 @@ input[class*="inputDefault"],
 textarea[class*="inputDefault"],
 div[class*="input"] input,
 div[class*="textArea"] textarea {
-    background: rgba(18, 18, 31, 0.4) !important;
-    backdrop-filter: blur(8px) !important;
+    background: rgba(18, 18, 31, 0.5) !important;
     border: 1px solid rgba(54, 32, 80, 0.4) !important;
     color: #EED4FF !important;
     font-family: "Rajdhani", sans-serif !important;
@@ -592,8 +566,7 @@ div[class*="lookFilled"][class*="select"] {
 
 div[class*="container"][class*="thread"],
 div[class*="mainCard"] {
-    background: rgba(9, 9, 15, 0.4) !important;
-    backdrop-filter: blur(12px) !important;
+    background: rgba(9, 9, 15, 0.5) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
@@ -603,9 +576,7 @@ div[class*="mainCard"] {
 
 div[class*="userProfileOuter"],
 div[class*="userPopoutOuter"] {
-    background: rgba(0, 0, 0, 0.55) !important;
-    backdrop-filter: blur(32px) saturate(1.4) !important;
-    -webkit-backdrop-filter: blur(32px) saturate(1.4) !important;
+    background: rgba(9, 9, 15, 0.9) !important;
     border: 1px solid rgba(123, 47, 190, 0.15) !important;
     box-shadow: 0 8px 32px rgba(0, 0, 0, 0.5), 0 0 40px rgba(123, 47, 190, 0.06) !important;
 }
@@ -627,10 +598,8 @@ div[class*="role"] {
 div[class*="emojiPicker"],
 div[class*="contentWrapper"][class*="picker"],
 div[class*="stickerPicker"] {
-    background: rgba(0, 0, 0, 0.55) !important;
+    background: rgba(9, 9, 15, 0.9) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
-    backdrop-filter: blur(28px) saturate(1.3) !important;
-    -webkit-backdrop-filter: blur(28px) saturate(1.3) !important;
 }
 
 div[class*="emojiPicker"] div[class*="header"],
@@ -644,8 +613,7 @@ div[class*="stickerPicker"] div[class*="header"] {
    ============================================ */
 
 div[class*="notice"][class*="colorDefault"] {
-    background: rgba(15, 15, 26, 0.6) !important;
-    backdrop-filter: blur(16px) !important;
+    background: rgba(15, 15, 26, 0.7) !important;
     border-bottom: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
@@ -654,9 +622,8 @@ div[class*="notice"][class*="colorDefault"] {
    ============================================ */
 
 div[class*="autocomplete"] {
-    background: rgba(0, 0, 0, 0.6) !important;
+    background: rgba(9, 9, 15, 0.9) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
-    backdrop-filter: blur(24px) !important;
 }
 
 div[class*="autocomplete"] div[class*="selectorSelected"] {
@@ -686,8 +653,7 @@ div[class*="divider"][class*="isUnread"] span {
    ============================================ */
 
 div[class*="message"]:hover div[class*="buttons"] {
-    background: rgba(9, 9, 15, 0.6) !important;
-    backdrop-filter: blur(12px) !important;
+    background: rgba(9, 9, 15, 0.7) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
 }
@@ -765,8 +731,7 @@ span[class*="timestamp"] {
 
 div[class*="card"],
 div[class*="cardPrimary"] {
-    background: rgba(9, 9, 15, 0.4) !important;
-    backdrop-filter: blur(12px) !important;
+    background: rgba(9, 9, 15, 0.5) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
 }
@@ -777,7 +742,6 @@ div[class*="cardPrimary"] {
 
 div[class*="newMessagesBar"] {
     background: rgba(123, 47, 190, 0.8) !important;
-    backdrop-filter: blur(12px) !important;
     color: #EED4FF !important;
     border-radius: 0 0 8px 8px !important;
     box-shadow: 0 4px 16px rgba(123, 47, 190, 0.3) !important;
@@ -789,8 +753,7 @@ div[class*="newMessagesBar"] {
 
 div[class*="stageListItem"],
 div[class*="eventCard"] {
-    background: rgba(9, 9, 15, 0.4) !important;
-    backdrop-filter: blur(12px) !important;
+    background: rgba(9, 9, 15, 0.5) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
@@ -799,8 +762,7 @@ div[class*="eventCard"] {
    ============================================ */
 
 div[class*="activityPanel"] {
-    background: rgba(9, 9, 15, 0.4) !important;
-    backdrop-filter: blur(16px) !important;
+    background: rgba(9, 9, 15, 0.5) !important;
     border-top: 1px solid rgba(54, 32, 80, 0.3) !important;
 }
 
@@ -809,8 +771,7 @@ div[class*="activityPanel"] {
    ============================================ */
 
 div[class*="uploadDropModal"] {
-    background: rgba(0, 0, 0, 0.6) !important;
-    backdrop-filter: blur(28px) !important;
+    background: rgba(0, 0, 0, 0.7) !important;
 }
 
 div[class*="uploadDropModal"] div[class*="inner"] {
@@ -819,8 +780,7 @@ div[class*="uploadDropModal"] div[class*="inner"] {
 }
 
 div[class*="attachment"] {
-    background: rgba(9, 9, 15, 0.4) !important;
-    backdrop-filter: blur(8px) !important;
+    background: rgba(9, 9, 15, 0.5) !important;
     border: 1px solid rgba(54, 32, 80, 0.3) !important;
     border-radius: 8px !important;
 }
